@@ -2,14 +2,14 @@
 
 # JavaScript - Build with Webpack  [Todo List Exercise].
 
-In this project, you will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server. [Find project specifications here](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/m1_list_structure.md)
+In this activity you will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. You should develop a first working version of the app following a wireframe, but without styling - just focus on functionality. [Find project specifications here](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/m1_basic_structure.md)
       
 
 <div align="center">
 
-[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/errea/Webpack-Todo_List/tree/feature/webpack-test)
-[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/errea/Webpack-Todo_List/issues)
-[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/Webpack-Todo_List/pulls)
+[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/errea/leader-board-project)
+[![Github Issues](https://github.com/errea/leader-board-project/issues)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/leader-board-project/pull/1)
 
 </div>
 
@@ -22,7 +22,7 @@ In this project, you will build a simple HTML list of To Do tasks. The list will
 </p>
 
 ># [Description]
->In this project, you will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server
+>The leaderboard website displays scores submitted by different players. It also allows you to submit your score. Project 1: basic page structure.
 
 
 ## 🔧 Built with<a name = "with"></a>
@@ -30,8 +30,10 @@ In this project, you will build a simple HTML list of To Do tasks. The list will
 - JavaScript
 - DOM
 - [Webpack config](hhttps://webpack.js.org/guides/getting-started/)
+- ES6 Modules 
+- [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md)
 
-![screenshot](./src/img/screenshot-todo.png)
+![screenshot](./src/img/app-screenshot.png)
 ## Getting Started <a name = "gs"></a>
 > To get a local copy up and running follow these simple example steps.
 
@@ -43,13 +45,13 @@ $ cd <folder>
 ```
 
 ~~~bash
-$ git clone https://github.com/errea/Webpack-Todo_List.git
-$ cd Webpack-Todo_List
+$ git clone https://github.com/errea/leader-board-project
+$ cd leader-board-project
 ~~~
 
 Run `npm Install` to install the node modules and webpacker.
 
-Run `npm start` opens on `http://localhost:8080/` in your browser.
+Run `npm start` or `npm watch` opens on `http://localhost:8080/` in your browser.
 
 Run `npm run build` to build the bundler.
 
@@ -94,7 +96,7 @@ Run `npm run build` to build the bundler.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/errea/Webpack-Todo_List/issues)
+Feel free to check the [issues page](https://github.com/errea/leader-board-project/issues)
 ## 👍 Show your support
 
 - Microverse: [@microverse](https://www.microverse.org/)
