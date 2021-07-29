@@ -3,15 +3,15 @@ import './style.css';
 const ul = document.querySelector('ul');
 const form = document.querySelector('#add-form');
 const refreshBtn = document.querySelector('#refresh');
-const baseUrl = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/"
-const gameEndpoint = "games/clgFLMtHrYVTrf5UzXrW/scores"
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+const gameEndpoint = 'games/clgFLMtHrYVTrf5UzXrW/scores';
 
 const addScore = async (e) => {
   e.preventDefault();
-  const user = document.querySelector('#user')
-  const score = document.querySelector('#score')
+  const user = document.querySelector('#user');
+  const score = document.querySelector('#score');
   const response = await fetch(
-    '${baseUrl}${gameEndpoint}',
+    `${baseUrl}${gameEndpoint}`,
     {
       method: 'POST',
       body: JSON.stringify({
@@ -30,7 +30,7 @@ const addScore = async (e) => {
 
 const refreshScoreTable = async () => {
   const response = await fetch(
-    '${baseUrl}${gameEndpoint}',
+    `${baseUrl}${gameEndpoint}`,
   )
     .then((response) => response.json())
     .then((json) => {
