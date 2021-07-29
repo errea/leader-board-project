@@ -8,7 +8,7 @@ In this activity you will set up a JavaScript project for the Leaderboard list a
 <div align="center">
 
 [![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/errea/leader-board-project)
-[![Github Issues](https://github.com/errea/leader-board-project/issues)
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/errea/leader-board-project/issues)
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/leader-board-project/pull/1)
 
 </div>
