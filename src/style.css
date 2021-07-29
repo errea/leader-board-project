@@ -2,12 +2,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Baloo Chettan 2", cursive;
+  font-family: "Baloo Chettan 2", sans-serif;
+  color: #DD4132FF;
+}
+
+body {
+  background-color: #C4A53E;
 }
 
 ul {
   list-style: none;
-  border: 2px solid black;
+  border: 2px solid #000;
+  height: 250px;
+  overflow: auto;
 }
 
 li {
@@ -15,27 +22,46 @@ li {
 }
 
 button {
-  border: 2px solid black;
-  background-color: #fff;
+  border: 1px solid #EDF5E1;
+  background-color:  #C4A53E;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  cursor: pointer;
 }
 
 li:nth-child(odd) {
-  background: #ddd;
-}
-
-h1 {
-  margin: 2rem 1.5rem;
+  background: #FFFFFF;
 }
 
 main {
-  padding: 0 4rem;
+  background-color: #292929;
+  margin: 8rem auto;
+  padding: 4rem 4rem 4rem 4rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  border-radius: 1.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 2rem 1.5rem;
+  color: #EDF5E1;
+}
+
+#table-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 #scores {
   display: flex;
   flex-direction: column;
-  margin-right: 5rem;
+  margin-right: 10%;
 }
 
 #scores-title {
@@ -59,10 +85,20 @@ main {
   flex-direction: column;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #add-score > form > input {
   margin-bottom: 1rem;
   border: 2px solid black;
   padding: 0.2rem;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 #add-score > form > button {
