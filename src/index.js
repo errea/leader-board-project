@@ -3,17 +3,20 @@ import './style.css';
 const ul = document.querySelector('ul');
 const form = document.querySelector('#add-form');
 const refreshBtn = document.querySelector('#refresh');
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+const gameEndpoint = 'games/clgFLMtHrYVTrf5UzXrW/scores';
 
 const addScore = async (e) => {
   e.preventDefault();
-  const input = document.querySelectorAll('input');
+  const user = document.querySelector('#user');
+  const score = document.querySelector('#score');
   const response = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/clgFLMtHrYVTrf5UzXrW/scores',
+    `${baseUrl}${gameEndpoint}`,
     {
       method: 'POST',
       body: JSON.stringify({
-        user: input[0].value,
-        score: Number(input[1].value),
+        user: user.value,
+        score: Number(score.value),
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
@@ -21,13 +24,13 @@ const addScore = async (e) => {
     },
   );
 
-  input[0].value = '';
-  input[1].value = '';
+  user.value = '';
+  score.value = '';
 };
 
 const refreshScoreTable = async () => {
   const response = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/clgFLMtHrYVTrf5UzXrW/scores',
+    `${baseUrl}${gameEndpoint}`,
   )
     .then((response) => response.json())
     .then((json) => {
