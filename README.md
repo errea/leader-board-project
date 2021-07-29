@@ -33,7 +33,7 @@ In this activity you will set up a JavaScript project for the Leaderboard list a
 - ES6 Modules 
 - [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md)
 
-![screenshot](./src/img/app-screenshot.png)
+![screenshot](./src/img/screen-shot.png)
 ## Getting Started <a name = "gs"></a>
 > To get a local copy up and running follow these simple example steps.
 
