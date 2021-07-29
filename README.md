@@ -32,8 +32,10 @@ In this activity you will set up a JavaScript project for the Leaderboard list a
 - [Webpack config](hhttps://webpack.js.org/guides/getting-started/)
 - ES6 Modules 
 - [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md)
+  
+  ># [Live Preview](https://determined-jennings-a4d5e7.netlify.app/)
 
-![screenshot](./src/img/app-screenshot.png)
+![screenshot](./src/img/screen-shot.png)
 ## Getting Started <a name = "gs"></a>
 > To get a local copy up and running follow these simple example steps.
 
