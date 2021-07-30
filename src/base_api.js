@@ -1,6 +1,6 @@
 const ul = document.querySelector('ul');
 const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
-const gameEndpoint = 'games/oFhfjmjpjZYpBjDrEkHq/scores';
+const gameEndpoint = 'games/5XULWTkklc8aUlUspjMp/scores';
 
 export const addScoreAPI = async (e) => {
   e.preventDefault();
